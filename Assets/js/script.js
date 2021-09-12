@@ -20,8 +20,9 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
 
   var lengthQuestion = window.prompt ("How many characters would you like your password to be?")
-  if (lengthQuestion === "5") {
-    passwordText.textContent = lengthQuestion;
+  if (lengthQuestion < 8 || lengthQuestion > 120) {
+      alert ("Must be between 8-128 characters! Please try again")
+      return writePassword();
   }
 
   var upperCaseQuestion = window.confirm ("Click 'OK' if you would you like to use upper case letters." )
