@@ -23,7 +23,11 @@ function writePassword() {
   if (lengthQuestion === "5") {
     passwordText.textContent = lengthQuestion;
   }
-
+  
+  var upperCaseQuestion = window.confirm ("Click 'OK' if you would you like to use upper case letters." )
+  var lowerCaseQuestion = window.confirm ("Click 'OK' if you would you like to use lower case letters." )
+  var numbersCaseQuestion = window.confirm ("Click 'OK' if you would you like to use numbers." )
+  var specialCharQuestion = window.confirm ("Click 'OK' if you would you like to use special characters." )
 
 
 
